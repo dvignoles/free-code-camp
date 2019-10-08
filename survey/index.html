@@ -42,28 +42,28 @@
 <body>
     <h1 id="title">Survey Form</h1>
     <div id="formBox">
-        <p>Let us know how we can improve freeCodeCamp</p>
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
 
-        <form>
+        <form id="survey-form">
             <div class="row">
 
-                <label class="labels">*Name</label>
-                <input type="text" placeholder="Enter your name" class=rightSide>
+                <label id="name-label" class="labels">*Name</label>
+                <input id="name" type="text" placeholder="Enter your name" class=rightSide>
             </div>
 
             <br>
 
             <div class="row">
-                    <label class="labels">*Email</label>
-                    <input type="text" placeholder="Enter your Email" class=rightSide>
+                    <label id="email-label" class="labels">*Email</label>
+                    <input id="email" type="email" placeholder="Enter your Email" class=rightSide>
             </div>
 
 
             <br>
 
             <div class="row">
-                    <label class="labels">*Age</label>
-                    <input type="text" placeholder="Age" class=rightSide>
+                    <label id="number-label" class="labels">*Age</label>
+                    <input id="number" type="number" min="1" max="125" placeholder="Age" class=rightSide>
             </div>
 
 
@@ -71,7 +71,7 @@
 
             <div class="row">
                     <label class="labels">Which option best describes your current role?</label>
-                    <select class=rightSide>
+                    <select id="dropdown" class=rightSide>
                         <option value="student">Student</option>
                         <option value="job">Full Time Job</option>
                         <option value="learner">Full Time Learner</option>
